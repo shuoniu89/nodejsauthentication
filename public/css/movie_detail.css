@@ -1,0 +1,24 @@
+:root {
+    /* CSS HEX */
+    --imperial-red: #e63946ff;
+    --honeydew: #f1faeeff;
+    --powder-blue: #a8dadcff;
+    --celadon-blue: #457b9dff;
+    --prussian-blue: #1d3557ff;
+}
+
+h1, h3, p {
+    margin-bottom: 20px;
+}
+
+#controls {
+    margin-top: 2%;
+}
+
+#movie_info {
+    background-color: var(--honeydew);
+}
+
+#poster_img {
+    width: 100%;
+}

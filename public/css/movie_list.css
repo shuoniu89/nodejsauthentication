@@ -1,0 +1,49 @@
+:root {
+    /* CSS HEX */
+    --imperial-red: #e63946ff;
+    --honeydew: #f1faeeff;
+    --powder-blue: #a8dadcff;
+    --celadon-blue: #457b9dff;
+    --prussian-blue: #1d3557ff;
+}
+
+#movie_section img {
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    padding: 2%;
+    object-fit: cover;
+}
+
+.movie_title {
+    color: var(--imperial-red);
+    font-family: 'RocknRoll', sans-serif;
+    font-size: 1.8rem;
+}
+
+.cel_noto {
+    color: var(--celadon-blue);
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.larger_text {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.odd_row {
+    background-color: var(--powder-blue);
+    overflow: auto;
+}
+
+.even_row {
+    background-color: var(--honeydew);
+    overflow: auto;
+}
+
+.check_box{
+    width: 30px;
+    height: 30px;
+}

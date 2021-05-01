@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="css/movie_list.css">
+
+    <!--    Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+          crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+            crossorigin="anonymous"></script>
+
+    <!--    Google font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=RocknRoll+One&display=swap"
+          rel="stylesheet">
+
+    <!--    fontawesome-->
+    <script src="https://kit.fontawesome.com/e5b5eed843.js" crossorigin="anonymous"></script>
+
+    <!--    Google jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="js/movie_list.js" defer></script>
+</head>
+<body class="container">
+
+<section id="header_section">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="navbar-nav">
+                <a class="navbar-brand" href="/">Clark Movie Club</a>
+            </div>
+            <div class="navbar-nav navbar-right">
+                <a class="nav-link active login" href="/login">Login</a>
+                <a class="nav-link active login" href="/register">Register</a>
+                <div class="navbar-brand mb-0 logout">Hello, <span id="showname"></span></div>
+                <a class="nav-link active logout" href="/logout">Log out</a>
+            </div>
+        </div>
+    </nav>
+</section>
+
+<section id="controls">
+    <div class="d-flex justify-content-end">
+        <button class="btn btn-lg btn-info" onclick="onCreate()">Create a new movie</button>
+    </div>
+</section>
+
+<section id="movie_section">
+    <ul id="movie_list" class="list-group">
+
+    </ul>
+</section>
+</body>
+</html>
